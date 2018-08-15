@@ -1,8 +1,10 @@
 cmake_minimum_required(VERSION 2.8.9)
-project(cbuff)
+cmake_policy(SET CMP0048 NEW)
+project(cbuff VERSION 1.0.0 LANGUAGES CXX )
 include_directories(include)
 file(GLOB SOURCES "src/*.cpp" )
 file(GLOB TSOURCES "test/*.cpp")
 add_compile_options("-std=c++11" "-Wall")
-
 add_executable(cbuff ${SOURCES} ${TSOURCES})
+#target_compile_features(cbuff PRIVATE cxx_std_11)
+
