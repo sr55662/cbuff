@@ -60,7 +60,7 @@ public:
 private:
 	using subclass_t = TSubclass;
 
-	void register_test(const char* name, bool (subclass_t::* method)())
+	void registerTest(const char* name, bool (subclass_t::* method)())
 	{
 		testVec.push_back(std::make_pair(std::string(name), method));
 		testMap[std::string(name)] =  method;
