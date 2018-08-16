@@ -17,7 +17,7 @@
 #define ASSERT_OR_FAIL(expr) { if (!(expr) \
 	{notifyTestFailed(__LINE__, #expr); return false; }}
 
-#define SUCCEED() {retrun true;}
+#define SUCCEED() {return true;}
 
 template<typename TSubclass>
 class TSuite
