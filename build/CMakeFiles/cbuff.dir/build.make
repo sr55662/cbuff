@@ -57,38 +57,38 @@ include CMakeFiles/cbuff.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/cbuff.dir/flags.make
 
-CMakeFiles/cbuff.dir/test/temp.cpp.o: CMakeFiles/cbuff.dir/flags.make
-CMakeFiles/cbuff.dir/test/temp.cpp.o: ../test/temp.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/sr/cbuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cbuff.dir/test/temp.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cbuff.dir/test/temp.cpp.o -c /home/ubuntu/sr/cbuff/test/temp.cpp
+CMakeFiles/cbuff.dir/src/temp.cpp.o: CMakeFiles/cbuff.dir/flags.make
+CMakeFiles/cbuff.dir/src/temp.cpp.o: ../src/temp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/sr/cbuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cbuff.dir/src/temp.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cbuff.dir/src/temp.cpp.o -c /home/ubuntu/sr/cbuff/src/temp.cpp
 
-CMakeFiles/cbuff.dir/test/temp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cbuff.dir/test/temp.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/sr/cbuff/test/temp.cpp > CMakeFiles/cbuff.dir/test/temp.cpp.i
+CMakeFiles/cbuff.dir/src/temp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cbuff.dir/src/temp.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/sr/cbuff/src/temp.cpp > CMakeFiles/cbuff.dir/src/temp.cpp.i
 
-CMakeFiles/cbuff.dir/test/temp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cbuff.dir/test/temp.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/sr/cbuff/test/temp.cpp -o CMakeFiles/cbuff.dir/test/temp.cpp.s
+CMakeFiles/cbuff.dir/src/temp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cbuff.dir/src/temp.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/sr/cbuff/src/temp.cpp -o CMakeFiles/cbuff.dir/src/temp.cpp.s
 
-CMakeFiles/cbuff.dir/test/temp.cpp.o.requires:
+CMakeFiles/cbuff.dir/src/temp.cpp.o.requires:
 
-.PHONY : CMakeFiles/cbuff.dir/test/temp.cpp.o.requires
+.PHONY : CMakeFiles/cbuff.dir/src/temp.cpp.o.requires
 
-CMakeFiles/cbuff.dir/test/temp.cpp.o.provides: CMakeFiles/cbuff.dir/test/temp.cpp.o.requires
-	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/test/temp.cpp.o.provides.build
-.PHONY : CMakeFiles/cbuff.dir/test/temp.cpp.o.provides
+CMakeFiles/cbuff.dir/src/temp.cpp.o.provides: CMakeFiles/cbuff.dir/src/temp.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/src/temp.cpp.o.provides.build
+.PHONY : CMakeFiles/cbuff.dir/src/temp.cpp.o.provides
 
-CMakeFiles/cbuff.dir/test/temp.cpp.o.provides.build: CMakeFiles/cbuff.dir/test/temp.cpp.o
+CMakeFiles/cbuff.dir/src/temp.cpp.o.provides.build: CMakeFiles/cbuff.dir/src/temp.cpp.o
 
 
 # Object files for target cbuff
 cbuff_OBJECTS = \
-"CMakeFiles/cbuff.dir/test/temp.cpp.o"
+"CMakeFiles/cbuff.dir/src/temp.cpp.o"
 
 # External object files for target cbuff
 cbuff_EXTERNAL_OBJECTS =
 
-cbuff: CMakeFiles/cbuff.dir/test/temp.cpp.o
+cbuff: CMakeFiles/cbuff.dir/src/temp.cpp.o
 cbuff: CMakeFiles/cbuff.dir/build.make
 cbuff: CMakeFiles/cbuff.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/sr/cbuff/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable cbuff"
@@ -99,7 +99,7 @@ CMakeFiles/cbuff.dir/build: cbuff
 
 .PHONY : CMakeFiles/cbuff.dir/build
 
-CMakeFiles/cbuff.dir/requires: CMakeFiles/cbuff.dir/test/temp.cpp.o.requires
+CMakeFiles/cbuff.dir/requires: CMakeFiles/cbuff.dir/src/temp.cpp.o.requires
 
 .PHONY : CMakeFiles/cbuff.dir/requires
 

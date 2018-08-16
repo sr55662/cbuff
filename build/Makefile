@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named t_cbuff
+
+# Build rule for target.
+t_cbuff: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 t_cbuff
+.PHONY : t_cbuff
+
+# fast build rule for target.
+t_cbuff/fast:
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/build
+.PHONY : t_cbuff/fast
+
+#=============================================================================
 # Target rules for targets named cbuff
 
 # Build rule for target.
@@ -123,32 +136,59 @@ cbuff/fast:
 	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/build
 .PHONY : cbuff/fast
 
-test/temp.o: test/temp.cpp.o
+src/temp.o: src/temp.cpp.o
 
-.PHONY : test/temp.o
+.PHONY : src/temp.o
 
 # target to build an object file
-test/temp.cpp.o:
-	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/test/temp.cpp.o
-.PHONY : test/temp.cpp.o
+src/temp.cpp.o:
+	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/src/temp.cpp.o
+.PHONY : src/temp.cpp.o
 
-test/temp.i: test/temp.cpp.i
+src/temp.i: src/temp.cpp.i
 
-.PHONY : test/temp.i
+.PHONY : src/temp.i
 
 # target to preprocess a source file
-test/temp.cpp.i:
-	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/test/temp.cpp.i
-.PHONY : test/temp.cpp.i
+src/temp.cpp.i:
+	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/src/temp.cpp.i
+.PHONY : src/temp.cpp.i
 
-test/temp.s: test/temp.cpp.s
+src/temp.s: src/temp.cpp.s
 
-.PHONY : test/temp.s
+.PHONY : src/temp.s
 
 # target to generate assembly for a file
-test/temp.cpp.s:
-	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/test/temp.cpp.s
-.PHONY : test/temp.cpp.s
+src/temp.cpp.s:
+	$(MAKE) -f CMakeFiles/cbuff.dir/build.make CMakeFiles/cbuff.dir/src/temp.cpp.s
+.PHONY : src/temp.cpp.s
+
+test/unittest.o: test/unittest.cpp.o
+
+.PHONY : test/unittest.o
+
+# target to build an object file
+test/unittest.cpp.o:
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/test/unittest.cpp.o
+.PHONY : test/unittest.cpp.o
+
+test/unittest.i: test/unittest.cpp.i
+
+.PHONY : test/unittest.i
+
+# target to preprocess a source file
+test/unittest.cpp.i:
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/test/unittest.cpp.i
+.PHONY : test/unittest.cpp.i
+
+test/unittest.s: test/unittest.cpp.s
+
+.PHONY : test/unittest.s
+
+# target to generate assembly for a file
+test/unittest.cpp.s:
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/test/unittest.cpp.s
+.PHONY : test/unittest.cpp.s
 
 # Help Target
 help:
@@ -157,11 +197,15 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... t_cbuff"
 	@echo "... rebuild_cache"
 	@echo "... cbuff"
-	@echo "... test/temp.o"
-	@echo "... test/temp.i"
-	@echo "... test/temp.s"
+	@echo "... src/temp.o"
+	@echo "... src/temp.i"
+	@echo "... src/temp.s"
+	@echo "... test/unittest.o"
+	@echo "... test/unittest.i"
+	@echo "... test/unittest.s"
 .PHONY : help
 
 

@@ -5,6 +5,7 @@ include_directories(include)
 file(GLOB SOURCES "src/*.cpp" )
 file(GLOB TSOURCES "test/*.cpp")
 add_compile_options("-std=c++11" "-Wall")
-add_executable(cbuff ${SOURCES} ${TSOURCES})
+add_executable(cbuff "${SOURCES}" )
+add_executable(t_cbuff "${TSOURCES}")
 #target_compile_features(cbuff PRIVATE cxx_std_11)
 

@@ -1,1 +1,1 @@
-/usr/bin/c++      CMakeFiles/cbuff.dir/test/temp.cpp.o  -o cbuff -rdynamic 
+/usr/bin/c++      CMakeFiles/cbuff.dir/src/temp.cpp.o  -o cbuff -rdynamic 

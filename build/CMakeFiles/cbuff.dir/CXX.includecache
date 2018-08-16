@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/sr/cbuff/test/temp.cpp
+/home/ubuntu/sr/cbuff/src/temp.cpp
 bits/stdc++.h
 -
 assert.h

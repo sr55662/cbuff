@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/cbuff.dir/test/temp.cpp.o"
+  "CMakeFiles/cbuff.dir/src/temp.cpp.o"
   "cbuff.pdb"
   "cbuff"
 )

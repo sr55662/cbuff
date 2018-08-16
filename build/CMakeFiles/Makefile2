@@ -60,6 +60,43 @@ CMAKE_SOURCE_DIR = /home/ubuntu/sr/cbuff
 CMAKE_BINARY_DIR = /home/ubuntu/sr/cbuff/build
 
 #=============================================================================
+# Target rules for target CMakeFiles/t_cbuff.dir
+
+# All Build rule for target.
+CMakeFiles/t_cbuff.dir/all:
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/depend
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/sr/cbuff/build/CMakeFiles --progress-num=3,4 "Built target t_cbuff"
+.PHONY : CMakeFiles/t_cbuff.dir/all
+
+# Include target in all.
+all: CMakeFiles/t_cbuff.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/t_cbuff.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/sr/cbuff/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/t_cbuff.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/sr/cbuff/build/CMakeFiles 0
+.PHONY : CMakeFiles/t_cbuff.dir/rule
+
+# Convenience name for target.
+t_cbuff: CMakeFiles/t_cbuff.dir/rule
+
+.PHONY : t_cbuff
+
+# clean rule for target.
+CMakeFiles/t_cbuff.dir/clean:
+	$(MAKE) -f CMakeFiles/t_cbuff.dir/build.make CMakeFiles/t_cbuff.dir/clean
+.PHONY : CMakeFiles/t_cbuff.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/t_cbuff.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/cbuff.dir
 
 # All Build rule for target.

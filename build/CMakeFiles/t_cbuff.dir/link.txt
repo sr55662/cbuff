@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/t_cbuff.dir/test/unittest.cpp.o  -o t_cbuff -rdynamic 

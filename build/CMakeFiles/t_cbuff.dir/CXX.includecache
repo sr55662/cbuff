@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/tsuite.h
+cstdio
+-
+string
+-
+map
+-
+vector
+-
+type_traits
+-
+typeinfo
+-
+cxxabi.h
+-
+cstdlib
+-
+
+/home/ubuntu/sr/cbuff/test/unittest.cpp
+tsuite.h
+/home/ubuntu/sr/cbuff/test/tsuite.h
+
